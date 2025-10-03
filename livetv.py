@@ -322,7 +322,7 @@ def replace_tv_urls(lines, tv_urls):
         line = lines[i]
         if line.strip().startswith("http") and tv_idx < len(tv_urls):
             group, title = tv_urls[tv_idx][1], tv_urls[tv_idx][2]
-            group_title = group_overrides.get(tvg_name, "Others")
+            group_title = group_overrides.get(title, "Others")
 
 
             if i > 0 and lines[i - 1].startswith("#EXTINF"):
