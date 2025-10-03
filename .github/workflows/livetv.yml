@@ -56,8 +56,8 @@ jobs:
 
           # Safe push, fallback merge if rejected
           if ! git push origin main; then
-            echo "⚠️ Push rejected. Trying safe fetch + merge..."
-            git pull origin main --rebase || {
+            echo "⚠️ Push rejected. Trying safe fetch + autostash rebase..."
+            git pull origin main --rebase --autostash || {
               echo "❌ Rebase failed. Exiting to avoid corruption."
               exit 1
             }
