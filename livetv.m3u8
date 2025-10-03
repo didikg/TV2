@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://tvpass.org/epg.xml" # Updated: 1759497830
-#EXTINF:-1  tvg-name="A&E SD" tvg-id="ae-us-eastern-feed" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/a-and-e-us.png?raw=true" group-title="TheTVApp",A&E SD
-https://v15.thetvapp.to/hls/AEEast/tracks-v2a1/mono.m3u8?token=xp0c63tHbVbmgbmZAfWPqQ&expires=1759519435&user_id=MFdFM3pSdGpkcGh2Y1hjTkxyMUU3dE9FRHBvZk9Mb0JKT0g3d1Jtaw==
-#EXTINF:-1  tvg-name="A&E HD" tvg-id="ae-us-eastern-feed" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/a-and-e-us.png?raw=true" group-title="TheTVApp",A&E HD
+#EXTM3U url-tvg="https://tvpass.org/epg.xml" # Updated: 1759507231
+#EXTINF:-1  tvg-name="A&E SD" tvg-id="ae-us-eastern-feed" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/a-and-e-us.png?raw=true" ,A&E SD
+https://v13.thetvapp.to/hls/AEEast/tracks-v2a1/mono.m3u8?token=pdYAxHOs2WfMCrzwoyP6og&expires=1759528836&user_id=SEcxWWdST2JDa0JVdTJSR2tNWmNGRlA3eWt1dURrdVBCU0ZHV3BVNg==
+#EXTINF:-1  tvg-name="A&E HD" tvg-id="ae-us-eastern-feed" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/a-and-e-us.png?raw=true" ,A&E HD
