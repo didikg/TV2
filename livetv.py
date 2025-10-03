@@ -96,6 +96,17 @@ def replace_tv_urls(lines, tv_urls):
         i += 1
     return updated
 
+import re  # Add this at the top if not already present
+
+def remove_group_title(lines):
+    cleaned = []
+    for line in lines:
+        if line.startswith("#EXTINF") and 'group-title=' in line:
+            # Remove group-title="..." using regex
+            line = re.sub(r'group-title="[^"]*"\s*', '', line)
+        cleaned.append(line)
+    return cleaned
+
 async def main():
     if not Path(M3U8_FILE).exists():
         print(f"❌ File not found: {M3U8_FILE}")
@@ -105,7 +116,8 @@ async def main():
         lines = f.read().splitlines()
 
     lines = clean_m3u_header(lines)
-
+    lines = remove_group_title(lines)  # 👈 Add this line
+    
     print("🔧 Replacing /tv stream URLs...")
     tv_new_urls = await scrape_tv_urls()
     if tv_new_urls:
