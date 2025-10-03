@@ -2,7 +2,7 @@ name: 🔁 Update livetv m3u
 
 on:
   schedule:
-    - cron: '15 */2 * * *' # Run every 2 hours
+    - cron: '15 * * * *' # Run every hour
   workflow_dispatch:      # Enable manual triggering
 
 permissions:
